@@ -1,0 +1,50 @@
+% Table of contents formatting
+\renewcommand{\contentsname}{Table of Contents}
+\setcounter{tocdepth}{1}
+ 
+% Headers and page numbering 
+\usepackage{fancyhdr}
+\pagestyle{plain}
+ 
+% Fonts and typesetting
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{Verdana}
+
+% Set figure legends and captions to be smaller sized sans serif font
+\usepackage[font={footnotesize,sf}]{caption}
+
+\usepackage{siunitx}
+
+% Adjust spacing between lines to 1.5
+\usepackage{setspace}
+\onehalfspacing
+\raggedbottom
+
+% Set margins
+\usepackage[top=1.25in,bottom=1.25in]{geometry}
+
+% Chapter styling
+\usepackage[grey]{quotchap}
+\makeatletter 
+\renewcommand*{\chapnumfont}{%
+  \usefont{T1}{\@defaultcnfont}{b}{n}\fontsize{80}{100}\selectfont% Default: 100/130
+  \color{chaptergrey}%
+}
+\makeatother
+
+% Set colour of links to black so that they don't show up when printed
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{array}
+\newcolumntype{x}[1]{%
+>{\centering\arraybackslash}m{#1}}%
+
+% Allow for long captions and float captions on opposite page of figures 
+\usepackage[rightFloats, CaptionBefore]{fltpage}
+
+% Don't let floats cross subsections
+\usepackage[section,subsection]{extraplaceins}
