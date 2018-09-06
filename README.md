@@ -13,7 +13,7 @@ chapter3_extra_results.md chapter4_generaldiscussion.md appendix.md references.m
 
 ```
 
-[Preview the result](https://www.dropbox.com/s/nl7a2n6khdg8m4p/phdthesis.pdf)
+[Preview the result](https://github.com/chiakaivalya/thesis-markdown-pandoc/raw/master/phdthesis.pdf)
 
 
 [Corresponding blog article](http://chiakaivalya.wordpress.com/2014/04/23/using-markdown-pandoc-to-write-my-biology-phd-thesis/)
